@@ -1,0 +1,11 @@
+<script>
+    var record = new Promise((res,rej)=>{
+        console.log(typeof res,typeof rej);
+        res("Task is completed")
+        //rej("Task is completed")
+    })
+    console.log(record);
+    record.then((value)=>{console.log(value);
+    }).catch((error)=>{console.log(error);
+    }).finally(()=>{console.log("Go to 2nd Class");})  //then is handler, it handle resolve values.
+</script>

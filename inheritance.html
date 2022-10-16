@@ -1,0 +1,22 @@
+<script>
+    // Single Level Inheritance
+    class a{
+        my1(){
+            console.log("a");
+        }
+    }
+    class b extends a{
+        my2(){
+            console.log("b");
+        }
+        
+        my1(){
+            super.my1();
+            console.log("class b my 1");
+        }
+    }
+    var record = new b
+    console.log(record);
+    record.my1();
+    record.my2();
+</script>
